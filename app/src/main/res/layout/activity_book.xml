@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/second_color"
+    tools:context=".BookActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="190dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/btnAddToAllBooks"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="@color/fifth_color"
+        android:text="Add To All Books"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddToCurrentlyReading"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/fifth_color"
+        android:text="Add To Currently Reading"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddToAllBooks"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnAddToAllBooks"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddToAllBooks" />
+
+    <Button
+        android:id="@+id/btnAddToWantToRead"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/fifth_color"
+        android:text="add to Want To Read"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddToCurrentlyReading"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnAddToCurrentlyReading"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddToCurrentlyReading" />
+
+    <Button
+        android:id="@+id/btnAddToFavourite"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/fifth_color"
+        android:text="add to Favourite"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddToWantToRead"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnAddToWantToRead"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddToWantToRead" />
+
+    <Button
+        android:id="@+id/btnAddToAlreadyReadBooks"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/fifth_color"
+        android:text="add to Already Read Books"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddToFavourite"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnAddToFavourite"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddToFavourite" />
+
+    <TextView
+        android:id="@+id/textViewBookName"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textViewBookAuthor"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Author"
+        app:layout_constraintEnd_toEndOf="@+id/textViewBookName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewBookName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBookName" />
+
+    <TextView
+        android:id="@+id/textViewBookInformation"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Information"
+        app:layout_constraintEnd_toEndOf="@+id/textViewBookAuthor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewBookAuthor"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBookAuthor"
+        android:layout_marginBottom="20dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</RelativeLayout>

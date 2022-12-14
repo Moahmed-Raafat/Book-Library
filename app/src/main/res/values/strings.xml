@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BOOK</string>
+    <string name="Home">Home</string>
+    <string name="All_Books">All Books</string>
+    <string name="Currently_Reading">Currently Reading</string>
+    <string name="Want_To_Read">Want To Read</string>
+    <string name="Favourite">Favourite</string>
+    <string name="Allready_Read_Books">Allready Read Books</string>
+    <string name="About">About app</string>
+    <string name="Book">book info</string>
+
+    <string name="Empty"></string>
+</resources>
